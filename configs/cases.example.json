@@ -1,0 +1,21 @@
+{
+  "validation_geometry": "h0006",
+  "test_geometry": "h0062",
+  "cases": [
+    {
+      "id": "series-a",
+      "series_dir": "../data/series-a/Data",
+      "acquisition_files": ["../data/series-a/Data/frame_00.pv", "../data/series-a/Data/frame_01.pv"]
+    },
+    {
+      "id": "series-b",
+      "series_dir": "../data/series-b/Data",
+      "acquisition_files": ["../data/series-b/Data/frame_00.pv"]
+    },
+    {
+      "id": "series-c",
+      "series_dir": "../data/series-c/Data",
+      "acquisition_files": ["../data/series-c/Data/frame_00.pv"]
+    }
+  ]
+}

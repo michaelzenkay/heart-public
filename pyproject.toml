@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "heart-flow-methods"
+version = "0.1.0"
+description = "Cardiac 4D flow MRI: phase decoding, aorta segmentation and flow measurement"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dependencies = ["numpy", "scipy", "torch>=2.3", "unet==0.8.1", "networkx", "zstandard"]
+
+[project.scripts]
+heart-flow-prepare = "heart_flow.data:main"
+heart-flow-train = "heart_flow.training:main"
+heart-flow-evaluate = "heart_flow.evaluation:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["heart_flow*"]
